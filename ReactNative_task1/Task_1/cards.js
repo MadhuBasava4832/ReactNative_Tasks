@@ -61,7 +61,10 @@ const Cards = () => {
                     <Text style={cardsStyles.ch} >Anime characters</Text>
                 </View>
                 <View style={cardsStyles.chi}>
-                    <ScrollView horizontal style={cardsStyles.scroll}>
+                    <ScrollView 
+                        horizontal
+                        style={cardsStyles.scroll}
+                        >
                         <FlatList 
                             horizontal
                             scrollEnabled={false}
@@ -141,7 +144,7 @@ const cardsStyles = StyleSheet.create({
         backgroundColor: '#fafafa',
     },
     scroll: {
-        width: 'auto',
+        width: 350,
         height: '500',
         // borderWidth:1,
     },
