@@ -3,6 +3,7 @@ import { View ,Image} from 'react-native';
 import Cards from './Task_1/cards';
 import Tablefunction from './Task_1/tables';
 import Thub2blocks from './tasks_2/thubfv';
+import Changing from './task_3/navigations_hooks';
 
 export default function App() {
   return (
@@ -10,7 +11,9 @@ export default function App() {
       {/* <Cards/>  */}
       {/* <Tablefunction/>    */}
       
-      <Thub2blocks />
+      {/* <Thub2blocks /> */}
+
+      <Changing />
 
     </View>
   );
