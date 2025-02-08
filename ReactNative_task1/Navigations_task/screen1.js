@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Screen3 from "./screen3";
 import Screen4 from "./screen4";
 import Screen5 from "./screen5";
-import Icon1 from 'react-native-vector-icons/Ionicons'
+import Icon1 from 'react-native-vector-icons/Ionicons';
 
 
 const Screen1 = () => {

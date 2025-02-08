@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Dimensions, ScrollView, Image, FlatList } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import Thub from '../assets/thub_photos/technicalhub.jpg';
 import Icons1 from 'react-native-vector-icons/AntDesign';
 
@@ -14,7 +14,8 @@ const Thub2blocks = () => {
     const [homestatus, sethomestatus] = useState(true);
     const [eventstatus, seteventstatus] = useState(false);
     const [profilestatus, setprofilestatus] = useState(false);
-    const { width, height } = Dimensions.get('screen');
+    // const { width, height } = Dimensions.get('screen');
+    const { width, height } = Dimensions.get('window');
 
     const categoryitems = [
         {
@@ -114,7 +115,7 @@ const Thub2blocks = () => {
 
 
     return (
-        <>
+        <SafeAreaProvider>
             <SafeAreaView style={{ width: width, height: height }} >
 
                 <View style={thubsty.bl1} >
@@ -348,7 +349,7 @@ const Thub2blocks = () => {
 
 
             </SafeAreaView>
-        </>
+        </SafeAreaProvider>
     )
 }
 
